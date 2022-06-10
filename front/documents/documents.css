@@ -1,12 +1,13 @@
 body {
     padding: 3em;
+
 }
 
 #documentPreview {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: outset;
+
 }
 
 #docWraper {

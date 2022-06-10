@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
     let header = req.body.header;
     let textContent = req.body.textContent;
 
-    let sql = `INSERT INTO documents (header, textContent) VALUES('${header}', '${textContent}')`;
+    let sql = `INSERT INTO documents (header, textContent, lastChanged) VALUES('${header}', '${textContent}', '${lastChanged}')`;
 
     req.app.locals.con.query(sql, (error, result) => {
       if (error) {

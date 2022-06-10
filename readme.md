@@ -1,6 +1,6 @@
 # NotesSystemApp
 
-App that creates and saves dokuments that can be viewd and changed and the saved to a MySQL database through TinyMCE editor, it uses Node.js, Express and its fron-end is built in old fashioned Vanilla JS!
+App that creates and saves dokuments that can be viewed and changed, then saved to a MySQL database through TinyMCE editor, it uses Node.js, Express and its fron-end is built in old fashioned Vanilla JS!
 
 <br>
 
@@ -18,6 +18,14 @@ I run MAMP to start a MySQL server
 - nodemon start
 
 <br>
+
+# NPM packs used
+
+- express
+- nodemon
+- mysql2
+- cors
+- bcrypt
 
 #
 
@@ -37,11 +45,3 @@ I run MAMP to start a MySQL server
 
 <br>
 <br>
-
-# npm packs
-
-- express
-- nodemon
-- mysql2
-- cors
-- bcrypt

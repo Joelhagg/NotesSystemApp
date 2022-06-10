@@ -44,6 +44,7 @@ const init = () => {
     let doc = {
       header: headerInput,
       textContent: textarea,
+      lastChanged: new Date().toLocaleString(),
     };
     console.log(doc);
 
