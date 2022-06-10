@@ -1,0 +1,11 @@
+body {
+    padding: 3em;
+}
+
+h2 {
+    color: red;
+}
+
+.isAuth {
+    display: none;
+}

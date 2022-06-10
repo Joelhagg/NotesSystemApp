@@ -1,0 +1,17 @@
+body {
+    padding: 3em;
+}
+
+#documentPreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: outset;
+}
+
+#docWraper {
+    border: outset;
+    padding: 1em;
+    margin: 1rem;
+    width: 500px;
+}
