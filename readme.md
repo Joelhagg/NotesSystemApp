@@ -35,13 +35,7 @@ I run MAMP to start a MySQL server
 
 <br>
 
-    Name	    Type	     Collation	      Attributes	Null	Default
-    id 	        int(11)	                                    No      None
-    header	    varchar(50)	 utf8_general_ci                Yes     NULL
-    textContent	text	     utf8_general_ci		        Yes	    NULL
-    created	    datetime			                        No	    CURRENT_TIMESTAMP
-    lastChanged	text	     utf8_general_ci		        Yes	    NULL
-    softDelete	tinyint(4)			                        Yes	    NULL
+![alt text](./MySQL.JPG)
 
 <br>
 <br>
