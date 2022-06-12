@@ -54,7 +54,7 @@ const fetchAllDocs = async () => {
     });
     firstDeleteContentBtn.innerText = "Radera";
     firstDeleteContentBtn.addEventListener("click", () => {
-      secondDeleteContentBtn.innerText = "Är du säker på att du vill radera???";
+      secondDeleteContentBtn.innerText = "Säker? Tryck här då!";
       secondDeleteContentBtn.style.color = "red";
       noToDeleteBtn.innerText = "NEJ!";
       noToDeleteBtn.addEventListener("click", () => {
@@ -96,6 +96,7 @@ const fetchAllDocs = async () => {
     } catch (error) {
       console.log("error", error);
     }
+    window.alert("Dokumentet raderades!");
   };
 };
 fetchAllDocs();

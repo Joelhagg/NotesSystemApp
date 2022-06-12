@@ -8,7 +8,7 @@
 
 Hej Janne!
 
-Som du ser så har jag byggt den här applikationen i vanilla javascript i fronten, jag får känslan av att man inte kommer att använda det speciellt mycket i ett senare arbetsliv då det mestadels verkar vara ramverk och bibliotek som gäller!
+Som du ser så har jag byggt den här applikationens front i vanilla javascript , jag får känslan av att man inte kommer att använda det speciellt mycket i ett senare arbetsliv då det mestadels verkar vara ramverk och bibliotek som gäller!
 
 Det som verkligen var något nytt och gav mig mycket var att använda "window.location" med params för att skickas till en annan sida och kunna få med data, i det här fallet skickar jag med "id" som jag sedan kör en fetch på och visar det valda dokumentet.
 Jag har valt att med localstorage bestämma om en användare är med booleanen "isAuth" inloggad eller inte, jag kollar vid varje steg i appen om man fortfarande är inloggad.

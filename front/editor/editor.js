@@ -24,7 +24,10 @@ const init = () => {
       });
     },
   });
-  document.getElementById("saveBtn").addEventListener("click", async () => {
+  let saveBtn = document.getElementById("saveBtn");
+
+  saveBtn.addEventListener("click", async () => {
+    console.log("click");
     let localStorageUserString = localStorage.getItem("loginUserInformation");
     let localStorageUserParsed = JSON.parse(localStorageUserString);
 
@@ -38,9 +41,20 @@ const init = () => {
 
     let headerInput = document.getElementById("headerInput").value;
     let textarea = document.getElementById("textarea").value;
+    let errorMessageContainer = document.getElementById(
+      "errorMessageContainer"
+    );
+    let errorMessage = document.createElement("p");
+    errorMessage.innerText = "Du måste fylla i en Titel!";
+    errorMessage.style.color = "red";
+
     console.log("headerInput", headerInput);
     console.log("textarea", textarea);
 
+    if (headerInput == "") {
+      return errorMessageContainer.append(errorMessage);
+      // return window.alert("Titeln är tom");
+    }
     let doc = {
       header: headerInput,
       textContent: textarea,
