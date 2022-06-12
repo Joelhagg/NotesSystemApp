@@ -11,6 +11,7 @@ router.post("/", async (req, res) => {
     }
     let header = req.body.header;
     let textContent = req.body.textContent;
+    let lastChanged = req.body.lastChanged;
 
     let sql = `INSERT INTO documents (header, textContent, lastChanged) VALUES('${header}', '${textContent}', '${lastChanged}')`;
 
